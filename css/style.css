@@ -1,0 +1,65 @@
+/* Ini Css */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav>a {
+    border: 1px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+}
+
+.banner-img {
+    height: 320px;
+    background-image: url(https://media.istockphoto.com/id/539833008/id/vektor/bepergian-keliling-dunia.jpg?s=170667a&w=0&k=20&c=4ewmMAopct73VSkh-l1f9B9kpBHY8ZHGUEpgedSes7M=);
+    background-size: auto;
+    background-position: center;
+}
+
+.content-header {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 24px;
+}
+
+.main-item {
+    flex: 1;
+}
+
+form {
+    background-color: aqua;
+}
+
+.our-paackages-header {
+    background-color: aliceblue;
+    margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+footer{
+    margin-top: 24px;
+    text-align: center;
+}
