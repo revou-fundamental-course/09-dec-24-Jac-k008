@@ -49,11 +49,11 @@ nav>a {
 }
 
 form {
-    background-color: aqua;
+    background-color: grey;
 }
 
-.our-paackages-header {
-    background-color: aliceblue;
+.our-packages-header {
+    background-color: blue;
     margin-top: 24px;
     padding-top: 64px;
     padding-bottom: 64px;
