@@ -2,15 +2,15 @@
 
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column; /* Tumpuk elemen secara vertikal */
+        flex-direction: column;
     }
 
     nav>a {
-        padding: 8px; /* Kurangi padding untuk menu navigasi */
+        padding: 8px;
     }
 
     .banner-img {
-        height: 200px; /* Sesuaikan tinggi banner */
+        height: 200px; 
     }
 }
 
@@ -53,10 +53,51 @@ nav>a:hover {
 
 .banner-img {
     height: 320px;
-    background-image: url(https://picsum.photos/750);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.banner-1{
+    background-image: url("https://picsum.photos/id/29/4000/2670");
+}
+
+.banner-2{
+    background-image: url(https://picsum.photos/id/25/5000/3333);
+}
+
+.mySlides {
+    height: 320px;
     background-size: cover;
     background-position: center;
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 18px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 .content-header {
     text-align: center;
@@ -126,4 +167,8 @@ footer span {
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    height: 500px;
 }
