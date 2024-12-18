@@ -1,7 +1,24 @@
 /* Ini Css */
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Tumpuk elemen secara vertikal */
+    }
+
+    nav>a {
+        padding: 8px; /* Kurangi padding untuk menu navigasi */
+    }
+
+    .banner-img {
+        height: 200px; /* Sesuaikan tinggi banner */
+    }
+}
+
+
 .main-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav {
@@ -10,13 +27,18 @@ nav {
 }
 
 nav>a {
-    border: 1px solid;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 8px; /* Jarak antar link */
     text-decoration: none;
-    color: black;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Efek hover */
+}
+
+nav>a:hover {
+    background-color: #007bff;
+    color: white;
 }
 
 .home-icon {
@@ -25,13 +47,14 @@ nav>a {
     background-image: url(https://picsum.photos/200);
     background-size: cover;
     background-position: center;
-    border-radius: 20%;
+    border-radius: 50%;
 }
+
 
 .banner-img {
     height: 320px;
-    background-image: url(https://media.istockphoto.com/id/539833008/id/vektor/bepergian-keliling-dunia.jpg?s=170667a&w=0&k=20&c=4ewmMAopct73VSkh-l1f9B9kpBHY8ZHGUEpgedSes7M=);
-    background-size: auto;
+    background-image: url(https://picsum.photos/750);
+    background-size: cover;
     background-position: center;
 }
 
@@ -49,17 +72,58 @@ nav>a {
 }
 
 form {
-    background-color: grey;
+    background-color: gainsboro; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
 
 .our-packages-header {
     background-color: blue;
     margin-top: 24px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-footer{
-    margin-top: 24px;
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    border-top: 1px solid #ccc;
     text-align: center;
+}
+
+footer span {
+    font-size: 14px;
+    color: #666;
+}
+
+.tesitimonial {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
