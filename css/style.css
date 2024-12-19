@@ -1,24 +1,48 @@
-/* Ini Css */
+/* CSS Revisi yang Disesuaikan */
 
+
+/* Responsivitas */
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     nav>a {
         padding: 8px;
+        font-size: 14px;
     }
 
     .banner-img {
         height: 200px; 
     }
+
+    .main-item {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .testimonial-item {
+        width: 100%; /* Ambil lebar penuh */
+        padding: 15px;
+    }
+
+    .testimonial-slider {
+        gap: 12px; /* Sesuaikan jarak antar elemen */
+    }
 }
 
-
+/* Header dan Navigasi */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: darkblue; /* Warna biru untuk header */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
 nav {
@@ -27,104 +51,107 @@ nav {
 }
 
 nav>a {
-    border: 1px solid #ccc;
+    border: 1px solid #fff; /* Sesuaikan warna border */
     border-radius: 4px;
     padding: 8px 16px;
-    margin: 0 8px; /* Jarak antar link */
+    margin: 0 8px;
     text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s; /* Efek hover */
+    color: white;
+    transition: background-color 0.3s, transform 0.3s; /* Efek hover */
 }
 
 nav>a:hover {
-    background-color: #007bff;
-    color: white;
+    background-color: white;
+    color: #007bff;
+    transform: scale(1.05); /* Tambahkan efek hover */
 }
 
 .home-icon {
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(https://seeklogo.com/images/B/beach-tour-logo-4505456896-seeklogo.com.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
 }
 
-
+/* Banner */
 .banner-img {
     height: 320px;
     background-size: cover;
     background-position: center;
     display: flex;
-}
-
-.banner-1{
-    background-image: url("https://picsum.photos/id/29/4000/2670");
-}
-
-.banner-2{
-    background-image: url(https://picsum.photos/id/25/5000/3333);
-}
-
-.mySlides {
-    height: 320px;
-    background-size: cover;
-    background-position: center;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    font-size: 18px;
-    transform: translateY(-50%);
-    z-index: 1;
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.prev {
-    left: 0;
+.banner-1 {
+    background-image: url(https://picsum.photos/710);
 }
 
-.next {
-    right: 0;
+.banner-2 {
+    background-image: url(https://picsum.photos/700);
 }
 
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.banner-3 {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/179/915/685/photography-water-reflection-bali-wallpaper-preview.jpg);
 }
 
-
+/* Konten Utama */
 .content-header {
     text-align: center;
+    margin-bottom: 20px; /* Tambahkan jarak */
+    font-size: 24px;
+    color: #333;
 }
 
 .main-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+    justify-content: center; /* Atur elemen merapat */
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Tambahkan batas maksimal jika diperlukan */
+    margin: 0 auto; /* Untuk pusat halaman */
+    box-sizing: border-box; /* Pastikan padding dihitung dalam lebar */
 }
 
+/* Sesuaikan elemen "formulir" dan "card" */
 .main-item {
-    flex: 1;
+    flex: 1 1 45%; /* Elemen mengambil sekitar 45% lebar layar */
+    max-width: 55%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.main-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih tegas */
+}
+
+/* Formulir */
 form {
-    background-color: gainsboro; 
+    background-color: #f8f9fa; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 form input, form select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 form button {
@@ -134,41 +161,177 @@ form button {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 form button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.testimonial {
+    position: relative;
+    overflow: hidden; /* Untuk menyembunyikan testimonial yang tidak aktif */
+    width: 100%; /* Pastikan slider testimonial menyesuaikan lebar container */
+    height: auto; /* Menjaga tinggi otomatis sesuai konten */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* Beri jarak antar elemen jika ada */
+}
+
+.testimonial-item {
+    display: none; /* Semua testimonial disembunyikan secara default */
+    width: 92%; /* Atur ukuran testimonial */
+    text-align: center; /* Pusatkan isi */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+.testimonial-item.active {
+    display: block; /* Testimonial aktif ditampilkan */
+}
+
+.photoprofile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Tambahkan border opsional */
+}
+
+.photo-1 {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/787/854/424/jujutsu-kaisen-satoru-gojo-anime-boys-anime-girls-hd-wallpaper-preview.jpg'); 
+}
+
+.photo-2 {
+    background-image: url('https://www.kindpng.com/picc/m/141-1413449_hxh-hunterxhunter-killua-kirua-killuazoldyck-zoldyck-hd-png.png');
+}
+
+.photo-3 {
+    background-image: url('https://i.pinimg.com/736x/34/90/26/3490261b3e167bd6bed7d00d52e15d8e.jpg');
+}
+
+.photo-4 {
+    background-image: url('https://i.pinimg.com/736x/c5/ac/9b/c5ac9b6d86637c76fab3ba477f4f4928.jpg');
 }
 
 .our-packages-header {
-    background-color: blue;
+    background-color: aliceblue;
     margin-top: 24px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
-footer {
-    background-color: #f4f4f4;
-    color: #333;
+/* Container utama */
+#our-package-section .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 20px;
-    border-top: 1px solid #ccc;
+}
+
+/* Gaya untuk setiap package */
+.package {
+    position: relative; /* Untuk memposisikan teks di atas gambar */
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-footer span {
-    font-size: 14px;
-    color: #666;
+/* Gambar latar belakang */
+.package img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%); /* Sedikit memudarkan gambar */
 }
 
-.tesitimonial {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Teks di tengah gambar */
+.package .package-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); /* Efek bayangan pada teks */
+    z-index: 1; /* Pastikan teks muncul di atas gambar */
+    text-align: center;
 }
 
-.content {
-    height: 500px;
+/* Efek hover */
+.package:hover img {
+    filter: brightness(85%); /* Gambar menjadi lebih terang saat hover */
+}
+
+
+#call-us-section {
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 0;
+}
+
+#call-us-section .content-header {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#call-us-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px 0;
+}
+
+#call-us-section .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#call-us-section .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+#call-us-section .social-icons a img {
+    width: 20px;
+    height: 20px;
+}
+
+#call-us-section .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+#call-us-section .footer-text {
+    font-size: 12px;
+    color: #ccc; /* Warna teks lebih terang agar kontras */
+    margin-top: 20px;
+}
+
+#call-us-section h3, 
+#call-us-section p {
+    margin: 0;
+    padding: 0;
 }

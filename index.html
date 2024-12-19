@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TRAVELNESIA</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
         <div class="home-icon"></div>
-        <div class="menu-button">
+
         <nav>
             <a href="#home-section">Home</a>
-            <a href="#our-package-section">Our Packages</a>
-            <a href="#call-us-section">Call Us</a>
+            <a href="#our-package-section">Our Destinations</a>
+            <a href="#call-us-section">About Us</a>
         </nav>
-        </div>
-
     </header>
 
     <hr />
@@ -26,7 +24,7 @@
         <header class="content-header">
             <h1>TRAVELNESIA</h1>
             <h3><i>Your Happiness is Our Happiness</i></h3>
-            <h3 id="name-result"></h3>
+            <h4 id="username-result"></h4>
         </header>
 
         <!-- Home Content -->
@@ -35,14 +33,39 @@
             <aside class="main-item">
                 <div class="banner-img banner-1"></div>
                 <div class="banner-img banner-2"></div>
-
-                <div class="tesitimonial"><i>"TRAVELNESIA Is The Best Travel Agent"</i>
-                <div class="photoprofile"></div>
-                <div class="nama-testimoni">
-                    <p><b>Rifa Gwenn</b>
-                    <br><i>Student</i></p>
+                <div class="banner-img banner-3"></div>
+                                
+                <div class="testimonial">
+                    <div class="testimonial-item">
+                        <p><i>"TRAVELNESIA Is The Best Travel Agent"</i></p>
+                        <div class="photoprofile photo-1"></div>
+                        <div class="nama-testimoni">
+                            <p><b>Gojo Satoru</b><br><i>Teacher</i></p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p><i>"Holidays with Travelnesia are very exciting"</i></p>
+                        <div class="photoprofile photo-2"></div>
+                        <div class="nama-testimoni">
+                            <p><b>Killua</b><br><i>Student</i></p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p><i>"I Love INDONESIA & TRAVELNESIA"</i></p>
+                        <div class="photoprofile photo-3"></div>
+                        <div class="nama-testimoni">
+                            <p><b>Haruno Sakura</b><br><i>Doctor</i></p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p><i>"Travelnesia provides an extraordinary experience. Hopefully I can go on holiday to Indonesia again"</i></p>
+                        <div class="photoprofile photo-4"></div>
+                        <div class="nama-testimoni">
+                            <p><b>Nico Robin</b><br><i>Sailor</i></p>
+                        </div>
+                    </div>
                 </div>
-                </div>
+                
             </aside>
 
             <!-- From Contact Us -->
@@ -53,14 +76,14 @@
                         <br>
                         <p>Sales akan menghubungi anda 1x24 jam setelah data anda kami terima.</p>
                         
-                            <label for="name"><b>Username:</b></label>
+                            <label for="username-input"><b>Username :</b></label>
                             <br>
-                            <input id="name" type="text" />
+                            <input id="username-input" type="text" required />
                             <br>
                             <br>
-                            <label for="email"><b>Email address:</b></label>
+                            <label for="email-input"><b>Email address :</b></label>
                             <br>
-                            <input id="email" type="text" />
+                            <input id="email-input" type="text" required />
                 
                             <br>
                             <br>
@@ -76,7 +99,7 @@
                             </select>
                             <br>
                             <br>
-                            <button type="button" id="submit-btn" onclick="nextSlide();">
+                            <button type="button" id="submit-btn" onclick="validateForm();">
                                 Submit
                             </button>
                         
@@ -88,24 +111,79 @@
         <!-- Our Packages Content -->
         <section id="our-package-section">
             <header class="content-header our-package-header">
-                <h1>Our Packages</h1>
+                <h1>Our Destinations</h1>
             </header>
 
-            <article class="content"></article>
+            <article class="content">
+                <div class="package">
+                    <img src="img/CandiBorobudur.png" alt="jawa">
+                    <div class="package-info">
+                        <h2>Jawa</h2>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="img/LembahOllon.png" alt="NTB">
+                    <div class="package-info">
+                        <h2>NTB</h2>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="img/RajaAmpat.png" alt="papua">
+                    <div class="package-info">
+                        <h2>Papua</h2>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="img/PantaiMarina.jpeg" alt="sumatera">
+                    <div class="package-info">
+                        <h2>Sumatera</h2>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="img/Pulau Derawan.jpg" alt="sulawesi">
+                    <div class="package-info">
+                        <h2>Sulawesi</h2>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="img/JamGadang.png" alt="kalimantan">
+                    <div class="package-info">
+                        <h2>Kalimantan</h2>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="img/TamanNasioanalGunungRinjani.png" alt="NTT">
+                    <div class="package-info">
+                        <h2>NTT</h2>
+                    </div>
+                </div>
+            </article>
         </section>
 
-                <!-- Our Packages Content -->
+                <!-- Call Us -->
         <section id="call-us-section">
             <header class="content-header our-package-header">
-                <h1>Call Us</h1>
+                <h3>About Us</h3>
             </header>
-
-            <article class="content"></article>
+            <p>
+                Travelnesia adalah sebuah platform digital atau website yang dirancang khusus untuk menjadi panduan lengkap dan inspiratif bagi para wisatawan 
+                yang ingin menjelajahi keindahan dan kekayaan budaya Indonesia. Sebagai gerbang utama menuju destinasi wisata di seluruh Nusantara, 
+                Travelnesia hadir untuk memberikan informasi yang komprehensif, terkini, dan mudah diakses tentang berbagai hal yang berkaitan dengan perjalanan di Indonesia
+            </p>
+            <br>
+            <div class="social-icons">
+                <a href="#"><img src="img/X.png" alt="Twitter"></a>
+                <a href="#"><img src="img/fb.png" alt="Facebook"></a>
+                <a href="#"><img src="img/igs.jpg" alt="Instagram"></a>
+                <a href="#"><img src="img/wa.jpeg" alt="WA"></a>
+                <a href="#"><img src="img/github.png" alt="github"></a>
+            </div>
+            <div class="footer-text">
+                <span>Made By Tresna (C) 2024</span>
         </section>
     </main>
 
     <footer>
-        <span> Made By Tresna (C) 2024 </span>
     </footer>
     <script src="js/script.js"></script>
 </body>
