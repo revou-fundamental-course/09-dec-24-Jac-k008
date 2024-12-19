@@ -21,7 +21,7 @@
     .main-item {
         width: 100%;
         max-width: 100%;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .testimonial-item {
@@ -113,7 +113,7 @@ nav>a:hover {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center; /* Atur elemen merapat */
-    align-items: center;
+    align-items: stretch;
     padding: 20px;
     width: 100%;
     max-width: 1200px; /* Tambahkan batas maksimal jika diperlukan */
@@ -154,6 +154,7 @@ form input, form select {
     font-size: 14px;
 }
 
+
 form button {
     background-color: #007bff;
     color: white;
@@ -166,7 +167,7 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .testimonial {
